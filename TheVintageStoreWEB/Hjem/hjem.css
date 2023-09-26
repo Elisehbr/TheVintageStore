@@ -1,0 +1,93 @@
+
+.gridcontainer3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gridelement3{
+  background-color: none;
+  text-align:center;
+}
+.gridcontainer3 img{
+  width: 100%;
+}
+#aboutus{
+  font-size: 20px;
+  width: 80%;
+  margin: auto;
+}
+footer{
+  text-align: center;
+  margin: auto;
+}
+#sec1{
+  width: 80%;
+  font-size: 20px;
+  margin: auto;
+  padding: 30px;
+}
+#sec2{
+  height: 400px;
+  background-color: #ffd8c2;
+  width: 100%;
+  color: white;
+}
+h1{
+  font-size: 60px;
+  color: white;
+  padding-top: 100px;
+}
+#sub{
+  color: black;
+}
+h5{
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+#text1, #text2, #text3{
+  position: relative;
+}
+#text1 nav{
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  font-size: 17px;
+  width: 400px;
+  color: white;
+}
+#text2 nav{
+  position: absolute;
+  left: 10%;
+  top: 10px;
+  font-size: 17px;
+  width: 400px;
+  color: white;
+}
+#text3 nav{
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  font-size: 17px;
+  width: 400px;
+  color: white;
+}
+.bb{
+  color: white;
+}
+.overskr:hover{
+  font-size:250%;
+}
+@media (max-width: 600px){
+  .gridcontainer3{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+    margin-bottom: 0;
+  }
+}

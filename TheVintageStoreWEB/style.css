@@ -1,0 +1,170 @@
+.gridcontainer{
+  display: grid;
+  /*grid-template-columns: 100px 100px 100px 100px;*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 200px;
+}
+.gridelement{
+  background-color: none;
+}
+body{
+  margin: 0;
+}
+header{
+  font-size: 16px;
+  margin-top: 35px;
+  text-align: center;
+}
+#tvb{
+  width: 400px;
+}
+hr{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+nav a{
+  text-decoration: none;
+  color:black;
+  width: 100%;
+}
+#menu:hover:not(.active){ /* Velger a-elementer som musen er over inne i nav, men ikke elementer som har klassen active*/
+  color: grey;
+
+}
+.gridcontainer2{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0px;
+  margin-top: 50px;
+}
+.gridelement2{
+  background-color: none;
+  text-align: center;
+}
+/*Gammel dropdown*/
+/* Dropdown Button */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: black;}
+
+/*ny dropdown*/
+/* Dropdown Button */
+.dropbtn2 {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  font-family: serif;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 20px;
+  font-size: 17px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content2 a {
+  color: black;
+  padding: 16px 30px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content2 a:hover {background-color: #e6e6e6;}
+
+/* Show the dropdown menu on hover */
+.dropdown2:hover .dropdown-content2 {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+@media (max-width: 700px){
+  .gridelement nav{
+    display: none;
+  }
+  .gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gridcontainer img{
+    width: 100%;
+  }
+  .gridcontainer2{
+    display: none;
+  }
+.nav{
+  display: none;
+}
+.dropdown{
+  display: block;
+  margin-left: 50px;
+}
+}
+@media (max-width: 1200px){
+  .gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50%;
+  }
+
+  .gridcontainer nav{
+    display: none;
+  }
+
+
+}

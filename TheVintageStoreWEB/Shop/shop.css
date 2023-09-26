@@ -1,0 +1,25 @@
+.gridcontainer3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.gridelement3{
+  background-color: none;
+  text-align: center;
+}
+.gridelement3:hover{
+width: 105%;
+
+}
+
+img{
+  width: 80%;
+
+}
+@media (max-width: 600px){
+  .gridcontainer3{
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}

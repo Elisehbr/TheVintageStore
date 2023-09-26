@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Costumer Care - TheVintageBar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="cc.css">
+  </head>
+  <body>
+    <header>
+      <section class="gridcontainer">
+        <section class="gridelement nav">
+          Search - EUR - Germany
+          <hr>
+        </section>
+        <section class="gridelement">
+
+            <a href="../hjem/index.html">
+              <img id="tvb" src="../bilder/logo.png" alt="">
+            </a>
+
+        </section>
+        <section class="gridelement nav">
+          <nav>
+            <a href="https://thevintagebar.com/eur/my-account/">Sign in/Register </a>
+            -
+            <a href="https://thevintagebar.com/eur/shopping-bag/">My shopping bag (0)</a>
+          </nav>
+          <hr>
+        </section>
+      </section>
+    </header>
+    <section class="gridcontainer2">
+      <section class="gridelement2">
+        <div class="dropdown2">
+          <button class="dropbtn2">
+            <a href="../Shop/shop.html">SHOP</a>
+          </button>
+          <div class="dropdown-content2">
+            <a href="../Shop/pradashopper.html">Prada Shopper</a>
+            <a href="../Shop/gucci.html">Gucci Boat Pochette</a>
+            <a href="../Shop/necklace.html">Chanel Necklace</a>
+            <a href="../Shop/balenciaga.html">Balenciaga First</a>
+            <a href="../Shop/fendibaguette.html">Fendi Shoulder Bag</a>
+            <a href="../Shop/Guccicrossbody.html">Gucci Crossbody</a>
+          </div>
+        </div>
+      </section>
+      <section class="gridelement2">
+        <nav id="menu">
+          <a href="../OurStory/ourstory.html">OUR STORY</a>
+        </nav>
+      </section>
+      <section class="gridelement2">
+        <nav id="menu">
+          <a href="../consignment/consignment.html">CONSIGNMENT</a>
+        </nav>
+      </section>
+      <section class="gridelement2">
+        <nav id="menu">
+          <a href="../authen/authen.html">AUTHENTICITY</a>
+        </nav>
+      </section>
+      <section class="gridelement2">
+        <nav id="menu">
+          <a href="../costumer/cc.html">CUSTOMER CARE</a>
+        </nav>
+      </section>
+    </section>
+    <section>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="../Shop/shop.html">Shop</a>
+          <a href="../OurStory/Ourstory.html">Our Story</a>
+          <a href="../consignment/consignment.html">Consignment</a>
+          <a href="../authen/authen.html">Authentisity</a>
+          <a href="../costumer/cc.html">Costumer Care</a>
+        </div>
+      </div>
+    </section>
+   <main>
+     <section>
+       <p id="litenoverskrift">The Vintage Store</p>
+       <h1 id="storo">Costumer Care</h1>
+       <hr id="strek">
+       <p>
+         We are always here to assist you with all of your needs and wishes. Have you found the bag of your dreams on our website? You are always welcome to contact us to learn more about it before placing your order. We are always happy to guide you though our collection of vintage treasures and assist you with your purchase. Do not hesitate to call us on +45 31 50 37 38 or email us at contact@thevintagebar.dk to talk to one of our specialists.
+       </p>
+     </section>
+     <section class="CostumerC">
+     <section class="Cc">
+       <div class="slideshow-container">
+         <div class="mySlides fade">
+           <img src="Bilder/b4.jpeg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+           <img src="Bilder/bb1.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides fade">
+           <img src="Bilder/bb2.jpg" style="width:100%">
+         </div>
+         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+       </div>
+       <br>
+        <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";
+           dots[slideIndex-1].className += " active";
+         }
+      </script>
+     </section>
+       <section id="text" class="Cc">
+         <h4>Contact info</h4>
+         <p> <a href="mailto:contact@thevintagebar.dk? subject=feedback">E-mail: contact@thevintagebar.dk</a></p>
+         <p>Phone: +45 31 50 37 38</p>
+         <p>(Available Monday to Friday 9am-5pm CET)</p>
+         <p>Jobs</p>
+         <p>If you are interested in a career at The Vintage Store, please visit our careers page or e-mail your CV to info@thevintagebar.dk.</p>
+       </section>
+    </section>
+   </main>
+  </body>
+  </html>

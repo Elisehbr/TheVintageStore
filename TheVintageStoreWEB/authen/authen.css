@@ -1,0 +1,53 @@
+body{
+  text-align: center;
+}
+main{
+  line-height: 30px;
+}
+
+.authen{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.aGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 40px;
+  padding-left: -10%;
+}
+.authenticity{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+}
+.authen img{
+  width: 90%;
+  padding: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#litenoverskrift{
+  margin-top: 80px;
+}
+#storo{
+  font-size: 40px;
+  font-style: ;
+}
+#strek{
+  width: 700px;
+}
+.flyttopp{
+  margin-top: -30px;
+}
+
+@media (max-width: 1200px) {
+  .authenticity{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
